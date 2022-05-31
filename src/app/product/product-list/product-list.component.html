@@ -1,0 +1,9 @@
+<h1>{{selectedProduct?.title}}</h1>
+<div class="container">
+    <div class="row">
+        <app-product-card *ngFor=" let product of allpro" [productData]="product"
+        (productSelected)="printProduct($event)"
+         class="col -md -4"></app-product-card>
+    </div>
+    
+</div>

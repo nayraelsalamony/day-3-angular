@@ -1,0 +1,13 @@
+<p>product-detail works!</p>
+<div class="card" style="width: 18rem;">
+    <img src="{{pro_data?.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title" >{{pro_data?.title}}</h5>
+      <p class="card-text">{{pro_data?.description|slice:300}}</p>
+      <h6 class="card-text">{{pro_data?.price|currency:"USD"}} </h6>
+      <h6 class="card-text">{{pro_data?.rating?.count}} </h6>
+      <h6 class="card-text">{{pro_data?.rating?.rate}} </h6>
+      <h6 class="card-text">{{pro_data?.category}} </h6>
+      <a href="#" class="btn btn-primary">Add to cart</a>
+    </div>
+</div>
